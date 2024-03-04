@@ -165,3 +165,34 @@ let mapArr = nums.map(function (n) {
   return n * 100;
 });
 console.log(mapArr);
+
+// 배열에서의 반복 실습
+let numArr = [];
+for (let i = 0; i < 100; i++) {
+  numArr.push(i + 1);
+}
+//합 구하기
+
+let sum1 = 0;
+for (let i = 0; i < numArr.length; i++) {
+  sum1 = sum1 + numArr[i];
+}
+console.log(sum1);
+
+//2. for of문
+
+let sum2 = 0;
+//numArr 배열에 있는 모든 요소를 num이라고 지칭하면서 반복한다
+for (let num of numArr) {
+  sum2 = sum2 + num;
+  //sum2 += num;
+}
+console.log(sum2);
+
+//3.forEach문
+
+let sum3 = 0;
+numArr.forEach(function (num) {
+  sum3 = sum3 + num;
+});
+console.log(sum3);
