@@ -44,6 +44,7 @@ header .inner .menu li:hover {
 header .menu-bar {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   .small-menu,
   .menu-bar {
